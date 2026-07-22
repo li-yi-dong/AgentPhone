@@ -1,0 +1,28 @@
+{
+  "name": "@agentphone/desktop-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "agentphone": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "node --import tsx/esm src/index.ts",
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "@agentphone/protocol": "*",
+    "node-pty": "1.0.0",
+    "ws": "8.18.0",
+    "qrcode": "1.5.4",
+    "chalk": "5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.12",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
